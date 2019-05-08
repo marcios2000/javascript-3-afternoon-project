@@ -22,6 +22,8 @@ var carDetails = {
 */
 
 //Code Here
+let { color, make, model, year} = carDetails
+let newVaribe = (color, make, model, year)
 
 
 
@@ -33,7 +35,7 @@ var carDetails = {
   The property names are firstName, lastName, and title.
 */
 
-function greeting( obj ) {
+function greeting({firstName, lastName, title}) {
   //Code Here
   
   // Do not edit the code below.
@@ -54,8 +56,11 @@ function greeting( obj ) {
 */
 
 //Code Here
+function totalPopulation(states){
+  var { utah, california, texas, arizona} = states;
+  return utah+california+texas+arizona
 
-
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -66,7 +71,12 @@ function greeting( obj ) {
   Use object destructuring to save the property values to new variables. 
   Push these new variables to an array and return the array. 
 */
-
+function ingredients (food) {
+  var arr = [];
+  var {carb,fat, protein} = food;
+  arr.push(carb,fat,protein);
+  return arr
+  }
 //Code Here
 
 
@@ -86,7 +96,10 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+function largeNumbers( {first, second, third}){
+ let max = Math.max.apply(null, Object.values(obj))
+ return(max);
+}
 
 
 ////////// PROBLEM 6 //////////
